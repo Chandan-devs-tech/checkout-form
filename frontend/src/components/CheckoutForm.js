@@ -9,6 +9,7 @@ const CheckoutForm = () => {
     { itemName: "", quantity: "", price: "" },
   ]);
   const [totalAmount, setTotalAmount] = useState(0);
+  const url = `${process.env.REACT_APP_API_URL}`;
 
   // Handle change in items array
   const handleItemChange = (index, e) => {
@@ -67,10 +68,7 @@ const CheckoutForm = () => {
     };
 
     try {
-      const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}/api/orders`,
-        formData
-      );
+      const res = await axios.post(url, formData);
       alert("Order placed successfully!");
       setName("");
       setAddress("");
