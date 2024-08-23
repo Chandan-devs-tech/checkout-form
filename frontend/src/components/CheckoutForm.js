@@ -68,7 +68,7 @@ const CheckoutForm = () => {
 
     try {
       const res = await axios.post(
-        `${process.env.REACT_APP_API_URL}api/orders`,
+        `${process.env.REACT_APP_API_URL}/api/orders`,
         formData
       );
       alert("Order placed successfully!");
