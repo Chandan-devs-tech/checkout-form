@@ -9,7 +9,7 @@ const CheckoutForm = () => {
     { itemName: "", quantity: "", price: "" },
   ]);
   const [totalAmount, setTotalAmount] = useState(0);
-  const url = `${process.env.REACT_APP_API_URL}`;
+  const url = "https://checkout-form-production.up.railway.app/api/orders";
 
   // Handle change in items array
   const handleItemChange = (index, e) => {
