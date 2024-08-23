@@ -60,7 +60,7 @@ To run this project locally, follow these steps:
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/your-username/checkout-form.git
+   git clone https://github.com/Chandan-devs-tech/checkout-form.git
    cd checkout-form
    ```
 
