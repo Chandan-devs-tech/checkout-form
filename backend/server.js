@@ -11,11 +11,8 @@ connectDB();
 const app = express();
 app.use(express.json()); // Middleware to parse JSON bodies
 
-app.use("/api/orders", orderRoutes); // Mount the routes
-
-app.get("/", (req, res) => {
-  res.send("API Running.............!");
-});
+// Mount the order routes at the root
+app.use("/", orderRoutes);
 
 // Error handling middleware should be the last middleware
 app.use(errorHandler);
