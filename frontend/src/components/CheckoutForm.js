@@ -9,7 +9,7 @@ const CheckoutForm = () => {
     { itemName: "", quantity: "", price: "" },
   ]);
   const [totalAmount, setTotalAmount] = useState(0);
-  const url = "https://checkout-form-production.up.railway.app/";
+  const url = "https://checkout-form-y3qf.onrender.com/";
 
   // Handle change in items array
   const handleItemChange = (index, e) => {
